@@ -1,9 +1,24 @@
 body{
+    background-color: beige;
+}
+header{
+    width: 80%;
+}
+main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    height: 50px;
 }
 nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
     font-family: 'Heebo';
     font-style: bold;
     font-weight: bold;
@@ -18,34 +33,25 @@ ul li {
     display: inline-block;
     margin: 10px 20px;
 }
-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-footer{
-    height: 50px;
-}
-.content{
-    padding: 15px;
-    background-color: rgb(164, 224, 224);
-}
 .about{
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
     border-radius: 10px;
+    padding: 15px;
+    background-color: rgb(164, 224, 224);
+    width: 80%;
 }
 .projects{   
+    margin: 25px;
     padding: 15px;
     background-color: rgb(168, 223, 182);
     border-radius: 10px;
+    width: 80%;
 }
 a{
     transition: color 0.3s ease 0s;
 }
-@media (min-width: 992px) {
-    a:hover{
+a:hover{
     color: #ff6464;       
-    }
 }
