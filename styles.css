@@ -1,4 +1,7 @@
 body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 nav{
     font-family: 'Heebo';
@@ -10,22 +13,39 @@ nav{
 ul {
     display:flex;
     flex-direction: row;
-    justify-content: end;
 }
 ul li {
     display: inline-block;
     margin: 10px 20px;
 }
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 footer{
-    text-align: center;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
     height: 50px;
 }
 .content{
     padding: 15px;
-    background-color: aqua;
-    display: inline-block;
+    background-color: rgb(164, 224, 224);
+}
+.about{
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+.projects{   
+    padding: 15px;
+    background-color: rgb(168, 223, 182);
+    border-radius: 10px;
+}
+a{
+    transition: color 0.3s ease 0s;
+}
+@media (min-width: 992px) {
+    a:hover{
+    color: #ff6464;       
+    }
 }
