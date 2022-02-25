@@ -63,18 +63,18 @@ a:hover{
     color: #ff6464;       
 }
 .prev-icon{
-    width: 246px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
 }
-.column {
-    float: left;
-    padding: 10px;
-  }
-  
-  .left {
-    width: 25%;
-  }
-  
-  .right {
-    width: 75%;
-  }
+.article{
+    display: flex;
+    flex-direction: row;
+}
+.article__prev-img{
+    width: 20%;
+    margin-right: 15px;
+}
+.article__desc{
+    width: 80%;
+}
