@@ -39,19 +39,42 @@ ul li {
     justify-content: space-between;
     border-radius: 10px;
     padding: 15px;
-    background-color: rgb(164, 224, 224);
+    background-color: rgb(215, 240, 240);
     width: 80%;
 }
 .projects{   
-    margin: 25px;
+    margin: 10px;
     padding: 15px;
-    background-color: rgb(168, 223, 182);
+    background-color: rgb(208, 228, 213);
     border-radius: 10px;
     width: 80%;
 }
+.interesting{
+    padding: 15px; 
+    background-color: rgb(189, 231, 191);
+    border-radius: 10px;
+    width: 80%;    
+}
+
 a{
     transition: color 0.3s ease 0s;
 }
 a:hover{
     color: #ff6464;       
 }
+.prev-icon{
+    width: 246px;
+    height: 180px;
+}
+.column {
+    float: left;
+    padding: 10px;
+  }
+  
+  .left {
+    width: 25%;
+  }
+  
+  .right {
+    width: 75%;
+  }
