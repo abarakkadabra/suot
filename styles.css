@@ -78,3 +78,6 @@ a:hover{
 .article__desc{
     width: 80%;
 }
+.miniText{
+    font-size: 8px;
+}
