@@ -1,0 +1,19 @@
+@import 'vars';
+@import 'fonts';
+
+html{
+    box-sizing: border-box;
+}
+
+*, *:after, *:before{
+    box-sizing: border-box;
+}
+
+body{
+    min-width: 320px;
+    overflow-x: hidden;
+}
+
+header{
+
+}
