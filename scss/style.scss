@@ -54,11 +54,23 @@ body{
         }
     }
 }
-/*    "liveSassCompile.settings.formats": [
+/* 
+{
+    "files.autoSave": "onFocusChange",
+    "editor.formatOnSave": true,
+    "explorer.confirmDelete": false,
+    "git.suggestSmartCommit": false,
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "editor.unicodeHighlight.allowedLocales": {
+        "ru": true
+    },
+    "liveSassCompile.settings.formats": [
         {
             "format": "expanded",
             "extensionName": ".css",
             "savePath": "/css"
         }
     ]
+}
     */

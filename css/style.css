@@ -66,12 +66,24 @@ body {
           box-shadow: 0 4px 0 0 #2B4074, 0 8px 0 0 #2B4074;
 }
 
-/*    "liveSassCompile.settings.formats": [
+/* 
+{
+    "files.autoSave": "onFocusChange",
+    "editor.formatOnSave": true,
+    "explorer.confirmDelete": false,
+    "git.suggestSmartCommit": false,
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "editor.unicodeHighlight.allowedLocales": {
+        "ru": true
+    },
+    "liveSassCompile.settings.formats": [
         {
             "format": "expanded",
             "extensionName": ".css",
             "savePath": "/css"
         }
     ]
+}
     */
 /*# sourceMappingURL=style.css.map */
