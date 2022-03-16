@@ -5,6 +5,10 @@ html{
     box-sizing: border-box;
 }
 
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
 *, *:after, *:before{
     box-sizing: border-box;
 }
@@ -12,9 +16,37 @@ html{
 body{
     min-width: 320px;
     overflow-x: hidden;
+    font-family: 'Roboto-Medium', 'Arial', 'sans-serif';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
 }
 .container{
     padding: 0 20px;
+}
+
+@media (min-width:640px) {
+    .container{
+        padding: 0 30px;
+    }
+}
+@media (min-width:768px) {
+    .container{
+        padding: 0 40px;
+    }
+}
+@media (min-width:1024px) {
+    .container{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 40px;
+    }
+}
+
+@media (min-width:1440px) {
+    .container{
+        max-width: 1320px;
+    }
 }
 .header{
     background-color: $accent;
@@ -25,12 +57,25 @@ body{
         align-items: center;
     }
 }
+@media (min-width:640px) {
+    .header{
+        &__inner{
+            min-height: 100px;
+        }
+    }
+    
+}
 .logo__link{
     margin-left: 8px;
 }
 @media (min-width: 640px){
     .logo__link{
         margin-left: 14px;
+    }
+}
+@media (min-width: 768px){
+    .logo__link{
+        margin-left: 0;
     }
 }
 .menu{
@@ -54,23 +99,33 @@ body{
         }
     }
 }
-/* 
-{
-    "files.autoSave": "onFocusChange",
-    "editor.formatOnSave": true,
-    "explorer.confirmDelete": false,
-    "git.suggestSmartCommit": false,
-    "git.autofetch": true,
-    "git.confirmSync": false,
-    "editor.unicodeHighlight.allowedLocales": {
-        "ru": true
-    },
-    "liveSassCompile.settings.formats": [
-        {
-            "format": "expanded",
-            "extensionName": ".css",
-            "savePath": "/css"
-        }
-    ]
+
+@media (min-width: 1440px){
+    .menu__btn{
+        margin-right: 90;
+    }
 }
-    */
+
+.head{
+    background-image: url('../img/bg-slider.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-height: 193px;
+}
+
+.top-slider{
+    background: rgba(33, 33, 33, 0.5);
+    &__item{
+        color: #fff;
+        text-align: center;
+    }
+    &__title{
+        font-family: 'RobotoCondensed-Regular';
+        line-height: 28;
+        font-style: 28px;
+        font-weight: 400;
+        text-transform: uppercase;
+        padding: 36px 0 28px;
+    }
+}
