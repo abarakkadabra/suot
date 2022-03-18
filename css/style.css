@@ -1,6 +1,45 @@
+@font-face {
+  font-family: 'Roboto-Medium';
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/Roboto-Medium.woff2") format("woff2"), url("../fonts/Roboto-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Dosis-Light';
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/Dosis-Light.woff2") format("woff2"), url("../fonts/Dosis-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Dosis-Medium';
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/Dosis-Medium.woff2") format("woff2"), url("../fonts/Dosis-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'RobotoCondensed-Bold';
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/RobotoCondensed-Bold.woff2") format("woff2"), url("../fonts/RobotoCondensed-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'RobotoCondensed-Regular';
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/RobotoCondensed-Regular.woff2") format("woff2"), url("../fonts/RobotoCondensed-Regular.woff") format("woff");
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
 }
 
 *, *:after, *:before {
@@ -11,10 +50,40 @@ html {
 body {
   min-width: 320px;
   overflow-x: hidden;
+  font-family: 'Roboto-Medium', 'Arial', 'sans-serif';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
 }
 
 .container {
   padding: 0 20px;
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1320px;
+  }
 }
 
 .header {
@@ -34,6 +103,12 @@ body {
           align-items: center;
 }
 
+@media (min-width: 640px) {
+  .header__inner {
+    min-height: 100px;
+  }
+}
+
 .logo__link {
   margin-left: 8px;
 }
@@ -41,6 +116,12 @@ body {
 @media (min-width: 640px) {
   .logo__link {
     margin-left: 14px;
+  }
+}
+
+@media (min-width: 768px) {
+  .logo__link {
+    margin-left: 0;
   }
 }
 
@@ -66,24 +147,34 @@ body {
           box-shadow: 0 4px 0 0 #2B4074, 0 8px 0 0 #2B4074;
 }
 
-/* 
-{
-    "files.autoSave": "onFocusChange",
-    "editor.formatOnSave": true,
-    "explorer.confirmDelete": false,
-    "git.suggestSmartCommit": false,
-    "git.autofetch": true,
-    "git.confirmSync": false,
-    "editor.unicodeHighlight.allowedLocales": {
-        "ru": true
-    },
-    "liveSassCompile.settings.formats": [
-        {
-            "format": "expanded",
-            "extensionName": ".css",
-            "savePath": "/css"
-        }
-    ]
+@media (min-width: 1440px) {
+  .menu__btn {
+    margin-right: 90;
+  }
 }
-    */
+
+.head {
+  background-image: url("../img/bg-slider.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 193px;
+}
+
+.top-slider {
+  background: rgba(33, 33, 33, 0.5);
+}
+
+.top-slider__item {
+  color: #fff;
+  text-align: center;
+}
+
+.top-slider__title {
+  font-family: 'RobotoCondensed-Regular';
+  line-height: 28;
+  font-style: 28px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
 /*# sourceMappingURL=style.css.map */
