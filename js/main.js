@@ -11,13 +11,9 @@ $(function () {
                 }
             },
             {
-                breakpoint: 600,
+                breakpoint: 640,
                 settings: {
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
+                    arrows: false
                 }
             }
         ]

@@ -9,6 +9,12 @@ h1,h2,h3,h4,h5,h6{
     margin: 0;
 }
 
+ul,li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 *, *:after, *:before{
     box-sizing: border-box;
 }
@@ -119,13 +125,34 @@ body{
     &__item{
         color: #fff;
         text-align: center;
+        min-height: 193px;
     }
     &__title{
         font-family: 'RobotoCondensed-Regular';
-        line-height: 28;
+        line-height: 28px;
         font-style: 28px;
         font-weight: 400;
         text-transform: uppercase;
         padding: 36px 0 28px;
+        max-width: 243px;
+        margin: 0 auto;
+    }
+    .slick-dots{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        right: 0;
+        button{
+            font-size: 0;
+            border: 0;
+            background-color: $accent;
+            padding: 0;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin: 0 10px;
+        }
     }
 }
