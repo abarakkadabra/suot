@@ -136,6 +136,18 @@ body{
         padding: 36px 0 28px;
         max-width: 243px;
         margin: 0 auto;
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 61px;
+            height: 8px;
+            margin: 0 auto;
+            color: $text-color;
+        }
     }
     .slick-dots{
         display: flex;
