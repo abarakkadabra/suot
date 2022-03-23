@@ -184,7 +184,7 @@ body {
   font-weight: 400;
   text-transform: uppercase;
   padding: 36px 0 28px;
-  max-width: 243px;
+  max-width: 163px;
   margin: 0 auto;
   position: relative;
 }
@@ -198,7 +198,7 @@ body {
   width: 61px;
   height: 8px;
   margin: 0 auto;
-  color: #4a4a4a;
+  background-color: #4a4a4a;
 }
 
 .top-slider .slick-dots {
@@ -214,9 +214,14 @@ body {
   right: 0;
 }
 
+.top-slider .slick-dots .slick-active button {
+  background-color: transparent;
+  border: 1px solid #476E4D;
+}
+
 .top-slider .slick-dots button {
   font-size: 0;
-  border: 0;
+  border: none;
   background-color: #2B4074;
   padding: 0;
   width: 10px;

@@ -134,7 +134,7 @@ body{
         font-weight: 400;
         text-transform: uppercase;
         padding: 36px 0 28px;
-        max-width: 243px;
+        max-width: 163px;
         margin: 0 auto;
         position: relative;
         &::after{
@@ -146,7 +146,7 @@ body{
             width: 61px;
             height: 8px;
             margin: 0 auto;
-            color: $text-color;
+            background-color: $text-color;
         }
     }
     .slick-dots{
@@ -156,9 +156,15 @@ body{
         bottom: 20px;
         left: 0;
         right: 0;
+        .slick-active{
+            button{
+            background-color: transparent;
+            border: 1px solid #476E4D;
+            }
+        }
         button{
             font-size: 0;
-            border: 0;
+            border: none;
             background-color: $accent;
             padding: 0;
             width: 10px;
