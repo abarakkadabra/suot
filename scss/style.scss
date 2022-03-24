@@ -14,7 +14,12 @@ ul,li{
     padding: 0;
     list-style: none;
 }
-
+button{
+    padding: 0;
+}
+p{
+    padding: 0;
+}
 *, *:after, *:before{
     box-sizing: border-box;
 }
@@ -153,6 +158,9 @@ body{
             background-color: $text-color;
         }
     }
+    &__text{
+        display: none;
+    }
     &__btn{
         display: none;
     }
@@ -212,13 +220,80 @@ body{
             height: 56px;
             border: none;
             position: absolute;
+            right: 0;
             z-index: 5;
         }
         .slick-prev{
             background-color: $accent;
+            top: calc(50% - 56px);
         }
         .slick-next{
             background-color: $bg-color;
+            bottom: calc(50% - 56px);
         }
     }
+}
+
+@media (min-width: 768px){
+    .top-slider{
+        &__item{
+            min-height: 465px;
+        }
+        &__title{
+            padding: -87px 0 0;
+            &::after{
+                display: none;
+            }
+        }
+        &__text{
+            padding: 25px 0 32px;
+            font-family: 'RobotoCondensed-Regular';
+            line-height: 20px;
+            font-style: 18px;
+            font-weight: 400;
+            max-width: 587px;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .top-slider{
+        &__item{
+            min-height: 618px;
+        }
+        &__title{
+            padding-top: 101px;
+            line-height: 84px;
+            font-size: 84px;
+            letter-spacing: 2px;
+            max-width: 750px;
+        }
+        .slick-dots{
+            bottom: 80px;
+        }
+    }
+    
+}
+
+@media (min-width: 1440px) {
+    .top-slider{
+        &__item{
+            min-height: 668px;
+        }
+        &__title{
+            padding-top: 107px;
+            line-height: 96px;
+            font-size: 96px;
+            letter-spacing: 2px;
+            max-width: 865px;
+        }
+        &__text{
+            font-size: 24px;
+            line-height: 26px;
+            max-width: 886px;
+        }
+    }
+    
 }
