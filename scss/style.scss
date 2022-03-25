@@ -376,8 +376,9 @@ body{
     font-size: 24px;
     color: $accent;
     position: relative;
-    margin-bottom: 24px;
+    padding-bottom: 28px;
     &::after{
+        content: "";
         position:absolute;
         width: 50px;
         height: 8px;
@@ -391,6 +392,11 @@ body{
 .services{
     padding: 25px 0 40px;
     text-align: center;
+    &__item-img{
+        margin: 0 auto;
+        width: 60px;
+        height: 60px;
+    }
     &__title{
         margin-bottom: 47px;
     }
@@ -399,5 +405,50 @@ body{
         font-size: 20px;
         color: $text-color;
         margin-bottom: 21px;
+    }
+    &__text{
+        color: #797979;
+        line-height: 17px;
+        font-size: 15px;
+        margin-bottom: 40px;
+    }
+    &__item{
+        min-height: 310px;
+        border: 1px solid $bg-color;
+        border-bottom: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        &:last-child{
+            border-bottom: 1px solid $bg-color;;
+        }
+        &:hover{
+            .services__item-link,
+            .services__item-text{
+                display: block;
+            }
+            .services__item-title{
+                margin-bottom: 30px;
+            }
+        }
+    }
+    &__item-img{
+        margin-bottom: 30px;
+    }
+    &__item-title{
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 2px;   
+        color: $text-color;
+    }
+    &__item-link{
+        display: none;
+        letter-spacing: 2px;
+        color: $accent;
+        text-decoration: none;
+    }
+    &__item-text{
+        display: none;
+        margin-bottom: 17px;
     }
 }
