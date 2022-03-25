@@ -31,6 +31,7 @@ body{
     font-weight: 400;
     font-size: 16px;
     line-height: 18px;
+    color: $default;
 }
 .container{
     padding: 0 20px;
@@ -368,5 +369,35 @@ body{
         &__box{
             max-width: 796px;
         }
+    }
+}
+.title{
+    line-height: 28px;
+    font-size: 24px;
+    color: $accent;
+    position: relative;
+    margin-bottom: 24px;
+    &::after{
+        position:absolute;
+        width: 50px;
+        height: 8px;
+        background-color: $accent;
+        bottom: 0;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+    }
+}
+.services{
+    padding: 25px 0 40px;
+    text-align: center;
+    &__title{
+        margin-bottom: 47px;
+    }
+    &__descr{
+        line-height: 24px;
+        font-size: 20px;
+        color: $text-color;
+        margin-bottom: 21px;
     }
 }
