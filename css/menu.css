@@ -9,6 +9,10 @@ nav {
           justify-content: space-between;
 }
 
+.fa-bars::before {
+  display: none;
+}
+
 nav .mainMenu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -26,7 +30,7 @@ nav .mainMenu li a {
 }
 
 nav .mainMenu li a:hover {
-  background: #12135f;
+  opacity: .5;
 }
 
 nav .openMenu {
@@ -65,7 +69,7 @@ nav .logo {
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 639px) {
   nav .mainMenu {
     height: 100vh;
     position: fixed;
@@ -105,6 +109,11 @@ nav .logo {
   .icons i {
     display: inline-block;
     padding: 12px;
+  }
+  .fa-bars::before {
+    display: block;
+    width: 32px;
+    height: 32px;
   }
 }
 /*# sourceMappingURL=menu.css.map */
