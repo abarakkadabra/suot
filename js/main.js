@@ -11,8 +11,7 @@ function show() {
     mainMenu.style.top = '0';
 }
 function close() {
-    mainMenu.style.display = 'none';
-    console.log('closed!');
+    mainMenu.style.top = '-100%';
 }
 //menu end
 

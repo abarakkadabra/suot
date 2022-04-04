@@ -65,7 +65,7 @@ nav .logo {
 
 @media(max-width: 639px) {
     nav .mainMenu {
-        height: 100vh;
+        height: 40vh;
         position: fixed;
         top: 0;
         right: 0;
@@ -74,7 +74,7 @@ nav .logo {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background: #000;
+        background: $accent;
         transition: top 1s ease;
         display: none;
     }
