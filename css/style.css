@@ -287,9 +287,18 @@ body {
     font-size: 18px;
     background-color: #2B4074;
     color: #F9F6E5;
-    padding: 16px 45px;
     border: none;
     border-radius: 3px;
+  }
+  .top-slider__btn a:link,
+  .top-slider__btn a:visited {
+    background-color: #2B4074;
+    color: white;
+    padding: 16px 45px;
+    text-decoration: none;
+  }
+  .top-slider__btn a:hover {
+    color: gray;
   }
   .top-slider .slick-dots {
     bottom: 50px;
