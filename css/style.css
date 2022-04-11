@@ -1007,4 +1007,10 @@ body {
     width: 553px;
   }
 }
+
+a:link,
+a:visited {
+  color: white;
+  text-decoration: none;
+}
 /*# sourceMappingURL=style.css.map */
