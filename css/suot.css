@@ -1,8 +1,9 @@
 ol {
   padding-left: 0;
+  list-style-type: decimal;
 }
 
-li {
+ol > li {
   margin: 0 20px;
   list-style-type: decimal;
 }
@@ -10,8 +11,24 @@ li {
 .suot-text-content {
   max-width: 320px;
   overflow-x: hidden;
-  text-align: justify;
   margin: 0 20px;
   color: black;
+}
+
+ol {
+  counter-reset: item;
+}
+
+ol > li {
+  counter-increment: item;
+}
+
+ol ol > li {
+  display: block;
+}
+
+ol ol > li:before {
+  content: counters(item, ".") ". ";
+  margin-left: -20px;
 }
 /*# sourceMappingURL=suot.css.map */
