@@ -1,0 +1,34 @@
+ol {
+  padding-left: 0;
+  list-style-type: decimal;
+}
+
+ol > li {
+  margin: 0 20px;
+  list-style-type: decimal;
+}
+
+.suot-text-content {
+  max-width: 320px;
+  overflow-x: hidden;
+  margin: 0 20px;
+  color: black;
+}
+
+ol {
+  counter-reset: item;
+}
+
+ol > li {
+  counter-increment: item;
+}
+
+ol ol > li {
+  display: block;
+}
+
+ol ol > li:before {
+  content: counters(item, ".") ". ";
+  margin-left: -20px;
+}
+/*# sourceMappingURL=suot.css.map */
