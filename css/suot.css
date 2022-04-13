@@ -16,6 +16,31 @@ ol > li {
   color: black;
 }
 
+@media (min-width: 640px) {
+  .suot-text-content {
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .suot-text-content {
+    padding: 0 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .suot-text-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1440px) {
+  .suot-text-content {
+    max-width: 1320px;
+  }
+}
+
 ol {
   counter-reset: item;
 }
@@ -31,5 +56,13 @@ ol ol > li {
 ol ol > li:before {
   content: counters(item, ".") ". ";
   margin-left: -20px;
+}
+
+.btn-order {
+  margin: 0 auto;
+}
+
+.btn-order:hover {
+  opacity: .7;
 }
 /*# sourceMappingURL=suot.css.map */

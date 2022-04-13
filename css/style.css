@@ -89,6 +89,11 @@ body {
   color: #9B9B9B;
 }
 
+.logo__link-img {
+  width: 106px;
+  height: 66px;
+}
+
 .container {
   padding: 0 20px;
 }
